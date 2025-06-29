@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacPro - Multiplayer Tic-Tac-Toe Arena</title>
+    <meta name="description" content="Play multiplayer tic-tac-toe with friends in real-time. Create rooms, chat, and compete on the leaderboard.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .subtitle { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            padding: 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .links { margin-top: 2rem; }
+        .links a { color: rgba(255,255,255,0.8); text-decoration: none; margin: 0 1rem; }
+        .links a:hover { color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 TicTacPro</h1>
+        <div class="subtitle">Multiplayer Tic-Tac-Toe Arena</div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🎮 Multiplayer</h3>
+                <p>Play with friends in real-time</p>
+            </div>
+            <div class="feature">
+                <h3>💬 Live Chat</h3>
+                <p>Chat during games</p>
+            </div>
+            <div class="feature">
+                <h3>🏆 Leaderboards</h3>
+                <p>Compete for the top spot</p>
+            </div>
+            <div class="feature">
+                <h3>🏷️ Room Tags</h3>
+                <p>Find the perfect game</p>
+            </div>
+        </div>
+        
+        <a href="https://tictacpro.replit.app" class="btn">🚀 Play Now</a>
+        <a href="https://github.com/Romnci/tictacpro" class="btn" style="background: #333;">📖 View Code</a>
+        
+        <div class="links">
+            <a href="https://github.com/Romnci/tictacpro">GitHub</a>
+            <a href="https://tictacpro.replit.app">Live Demo</a>
+            <a href="mailto:romnci@users.noreply.github.com">Contact</a>
+        </div>
+        
+        <div style="margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
+            Built with React, Express, PostgreSQL, and deployed on Replit
+        </div>
+    </div>
+</body>
+</html>
